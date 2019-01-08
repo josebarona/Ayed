@@ -1,12 +1,18 @@
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.NoSuchElementException;
 
 public class LinkedList<T>{
     private Node<T> first ;
     private int size ;
+    private Comparator<T> comp ;
 
     public LinkedList(){
         this.size = 0 ;
+    }
+
+    public LinkedList(Comparator<T> comp){
+        this.comp = comp;
     }
 
     public void add(T elem){
@@ -20,7 +26,7 @@ public class LinkedList<T>{
             if(this.first.elem.equals(elem)) this.first = this.first.next ;
             else this.first.deleteNode(elem);
             this.size-- ;
-        }else throw new NoSuchElementException("error") ;
+        }else throw new NoSuchElementException("error, no hay tal elemento en la lista") ;
     }
 
     public void deleteAt(int index){
@@ -33,7 +39,7 @@ public class LinkedList<T>{
             }
             if(current.next.next!=null) current.next = current.next.next ;
             this.size-- ;
-        }else throw new NoSuchElementException("error") ;
+        }else throw new NoSuchElementException("error, no hay tal indice en la lista") ;
     }
 
     public boolean contains(T elem){
@@ -49,6 +55,13 @@ public class LinkedList<T>{
             current = current.next ;
         }
         return array ;
+    }
+
+    public void sort(){
+        // la ordeno con selectionSort()
+        if(this.comp!=null){
+        
+        }else throw new NoSuchElementException("error, no hay comparator") ;
     }
 
     public void print(){
