@@ -8,18 +8,19 @@ public class LinkedList<T>{
 
     public void add(T elem){
         if(this.first==null) this.first = new Node<>(elem) ;
-        else{
-            this.first.addNode(elem)  ;
-        }
+        else this.first.addNode(elem)  ;
         this.size++ ;
     }
 
     public void delete(T elem){
-        if(this.)
+        if(this.first.elem.equals(elem)) this.first = this.first.next ;
+        else this.first.deleteNode(elem);
+        this.size-- ;
     }
 
     public void print(){
         this.first.show() ;
+        System.out.println();
     }
 
     public int getSize() {
@@ -45,6 +46,13 @@ public class LinkedList<T>{
             else this.next.addNode(elem) ;
         }
 
+        public void deleteNode(T elem){
+            if(this.next!=null){
+                if(this.next.elem.equals(elem)) this.next = this.next.next ;
+                else this.next.deleteNode(elem) ;
+            }
+        }
+
         public void show(){
             if(this.elem!=null) System.out.print(this.elem + " , ") ;
             if(this.next!=null) this.next.show() ;
@@ -60,6 +68,8 @@ public class LinkedList<T>{
         friends.add("ferron") ;
         friends.add("agus") ;
         System.out.println("size: " + friends.getSize() );
+        friends.print();
+        friends.delete("toto") ;
         friends.print();
 
     }
