@@ -1,6 +1,9 @@
 package Alicia;
 
+import java.awt.font.TextHitInfo;
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 public class BinarySearchTree<K,V>{
@@ -28,9 +31,28 @@ public class BinarySearchTree<K,V>{
         this.size-- ;
     }
 
+    public void remove(K key){
+        List<Node<K,V>> temp = new ArrayList<>(this.size) ;
+        if(root!=null){
+            this.root.dump(key,temp) ;
+            this.copyFromList(temp);
+        }
+        else throw new NoSuchElementException("error, arbol vacio") ;
+    }
+
     public void printInOrder(){
         if(root!=null) root.visit() ;
         else throw new NoSuchElementException("error, no hay nada que imprimir") ;
+    }
+
+    public void copyFromList(List<Node<K, V>> list){
+        this.root = null ;
+        this.root = list.get(0) ;
+        for (Node<K,V> n : list) {
+            K key = n.key ;
+            V value = n.value ;
+            this.add(value,key);
+        }
     }
 
     private class Node<K,V>{
@@ -78,6 +100,14 @@ public class BinarySearchTree<K,V>{
             }
         }
 
+        public void dump(K key,List<Node<K,V>> list){
+            if(this.left!=null) this.left.dump(key,list);
+            if(this.key!=null){
+                if(!this.key.equals(key)) list.add(new Node(this.value,this.key)) ;
+            }
+            if(this.right!=null) this.right.dump(key,list) ;
+        }
+
         public void visit(){
             if(this.left!=null) this.left.visit() ;
             System.out.println("key: " + this.key + " || Value: " + this.value) ;
@@ -89,19 +119,24 @@ public class BinarySearchTree<K,V>{
     public static void main(String[] args) {
         Comparator<Integer> comp0 = Integer::compareTo ;
         BinarySearchTree<Integer,String> tree = new BinarySearchTree<>(comp0) ;
+        tree.add("rodri",5) ;
         tree.add("jose",0) ;
         tree.add("franz",1) ;
         tree.add("master",3) ;
+        tree.add("fanny",7);
         tree.add("fabri",4) ;
         tree.add("ferron",6) ;
-        tree.add("rodri",5) ;
-        tree.add("fanny",7);
         tree.add("agus",8) ;
         tree.add("toto",9);
+        tree.add("donati",-1);
         tree.printInOrder() ;
         tree.delete(7) ;
         System.out.println("--------------------");
         tree.printInOrder() ;
+        System.out.println("--------------------");
+        tree.remove(6) ;
+        tree.printInOrder();
+
     }
 
 }
