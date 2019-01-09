@@ -1,6 +1,4 @@
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 public class LinkedList<T>{
     private Node<T> first ;
@@ -15,10 +13,30 @@ public class LinkedList<T>{
         this.comp = comp;
     }
 
+    public LinkedList(int size){
+        for(int i=0 ; i<size ; i++) this.add(null);
+    }
+
     public void add(T elem){
         if(this.first==null) this.first = new Node<>(elem) ;
         else this.first.addNode(elem)  ;
         this.size++ ;
+    }
+
+    public void setAt(int index, T elem){
+        if(index<size){
+            int i = 0 ;
+            Node<T> current = this.first ;
+            while (i<index-1){
+                current = current.next ;
+                i++ ;
+            }
+            if(current.next!=null){
+                Node<T> temp = current.next ;
+                current.next = new Node<>(elem) ;
+                current.next.next = temp.next ;
+            }
+        }else throw new NoSuchElementException("error, no hay tal indice en la lista") ;
     }
 
     public void delete(T elem){
@@ -39,7 +57,19 @@ public class LinkedList<T>{
             }
             if(current.next.next!=null) current.next = current.next.next ;
             this.size-- ;
-        }else throw new NoSuchElementException("error, no hay tal indice en la lista") ;
+        }else throw new NoSuchElementException("error, hay elemento en esa posicion") ;
+    }
+
+    public T get(int index){
+        if(index<size){
+            Node<T> current = this.first ;
+            int i = 0 ;
+            while (i<index){
+                current = current.next ;
+                i++ ;
+            }
+            return current.elem ;
+        }else throw new NoSuchElementException("error, hay elemento en esa posicion") ;
     }
 
     public boolean contains(T elem){
@@ -60,8 +90,26 @@ public class LinkedList<T>{
     public void sort(){
         // la ordeno con selectionSort()
         if(this.comp!=null){
-        
+            List<T> temp = this.toArrayList() ;
+            Selection<T> selection =  new Selection<>() ;
+            selection.sort(temp,comp) ;
+            this.copyAll(temp) ;
         }else throw new NoSuchElementException("error, no hay comparator") ;
+    }
+
+    public void copyAll(List<T> arrList){
+        this.first = null ;
+        this.first = new Node<>(arrList.get(0)) ;
+        int n = arrList.size() ;
+        for(int i=1 ; i<n ; i++){
+            this.add(arrList.get(i)) ;
+        }
+    }
+
+    public List<T> toArrayList(){
+        List<T> list = new ArrayList<>(size) ;
+        for(int i=0 ; i<size ; i++) list.add(this.get(i)) ;
+        return list ;
     }
 
     public void print(){
@@ -80,6 +128,9 @@ public class LinkedList<T>{
     private class Node<T>{
         T elem ;
         Node<T> next ;
+
+        public Node() {
+        }
 
         public Node(T elem) {
             this.elem = elem;
@@ -117,23 +168,31 @@ public class LinkedList<T>{
     }
 
     public static void main(String[] args) {
-        LinkedList<String> friends = new LinkedList<>() ;
+        Comparator<String> comp = Comparator.comparing(String::toString) ;
+        LinkedList<String> friends = new LinkedList<>(comp) ;
         friends.add("master") ;
         friends.add("fabri") ;
         friends.add("toto") ;
         friends.add("ferron") ;
         friends.add("agus") ;
-//        System.out.println("size: " + friends.getSize() );
-//        friends.print();
-//        friends.delete("toto") ;
-//        friends.print();
-//        LinkedList<String> familia = new LinkedList<>() ;
-//        familia.delete("mami") ;
-//        friends.deleteAt(2) ;
-//        friends.print();
-        System.out.println(friends.contains("lefo"));
-        Object[] friendsArr = friends.toArray() ;
-        System.out.println(Arrays.toString(friendsArr) );
+        friends.print();
+        friends.sort();
+        friends.print();
+        System.out.println();
+
+        Comparator<Integer> comp2 = Comparator.comparing(Integer::intValue) ;
+        LinkedList<Integer> primes = new LinkedList<>(comp2) ;
+        primes.add(11) ;
+        primes.add(2) ;
+        primes.add(5) ;
+        primes.add(13) ;
+        primes.add(7) ;
+        primes.add(3) ;
+        primes.print();
+        primes.sort() ;
+        primes.print();
+
+
 
     }
 
