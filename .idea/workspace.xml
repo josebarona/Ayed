@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5d4c265b-f758-4b7d-81d7-36e4250decb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ayed/LinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ayed/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Alicia/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alicia/BinarySearchTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +19,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Alicia/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-63">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="404">
+              <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
               <folding>
-                <element signature="e#202#203#0" expanded="true" />
-                <element signature="e#246#247#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,10 +50,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="840" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="840" />
+    <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -97,7 +98,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547013688951" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547065970994" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -112,7 +113,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BinarySearchTree">
+    <configuration name="BinarySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Alicia.BinarySearchTree" />
+      <module name="Ayed" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Alicia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Marcelo.LinkedList" />
       <module name="Ayed" />
@@ -122,6 +136,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySearchTree" />
         <item itemvalue="Application.LinkedList" />
       </list>
     </recent_temporary>
@@ -138,6 +153,7 @@
       <updated>1546985112773</updated>
       <workItem from="1546985115008" duration="6163000" />
       <workItem from="1547006751475" duration="6708000" />
+      <workItem from="1547044678376" duration="3425000" />
     </task>
     <task id="LOCAL-00001" summary="comence linked list, delete y add funcionales, deberia mejorarlos igual">
       <created>1546987874218</created>
@@ -181,16 +197,24 @@
       <option name="project" value="LOCAL" />
       <updated>1547013670366</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="//">
+      <created>1547044746636</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1547044746636</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12871000" />
+    <option name="totallyTimeSpent" value="16296000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="23" width="840" height="1027" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30119047" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -199,7 +223,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3287234" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3287234" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -231,7 +255,8 @@
     <MESSAGE value="agrege un par de metodillos, el sort esta bastante feo, otro dia lo hago menos villero&#10;#IllRefactorThisLater" />
     <MESSAGE value="empeze el bst" />
     <MESSAGE value="add() de bst ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="add() de bst ready" />
+    <MESSAGE value="//" />
+    <option name="LAST_COMMIT_MESSAGE" value="//" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Marcelo/Selection.java">
@@ -257,11 +282,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Alicia/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="404">
+          <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
           <folding>
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
