@@ -1,7 +1,5 @@
 package Alicia;
 
-import java.awt.font.TextHitInfo;
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -32,20 +30,24 @@ public class BinarySearchTree<K,V>{
     }
 
     public void remove(K key){
-        List<Node<K,V>> temp = new ArrayList<>(this.size) ;
-        if(root!=null){
-            this.root.dump(key,temp) ;
-            this.copyFromList(temp);
-        }
-        else throw new NoSuchElementException("error, arbol vacio") ;
+        BinarySearchTree<K,V> otherTree = new BinarySearchTree<>(this.comparator) ;
+        if(this.root!=null){
+            if(this.root.key!=key){
+                this.root.dump(key,otherTree) ;
+                this.root = otherTree.root ;
+            }
+        }else throw new NoSuchElementException("error, arbol vacio") ;
+        this.size-- ;
     }
 
     public void printInOrder(){
         if(root!=null) root.visit() ;
         else throw new NoSuchElementException("error, no hay nada que imprimir") ;
+        System.out.println("size: " + this.size) ;
+        System.out.println();
     }
 
-    public void copyFromList(List<Node<K, V>> list){
+    public void copyFromList(List<Node<K,V>> list){
         this.root = null ;
         this.root = list.get(0) ;
         for (Node<K,V> n : list) {
@@ -69,12 +71,10 @@ public class BinarySearchTree<K,V>{
         public void addNode(V value, K key, Comparator<K> comparator){
             int comp = comparator.compare(key,this.key) ;
             if(comp<0){
-                //si key<this.key
                 if(this.left==null) this.left = new Node<>(value,key) ;
                 else this.left.addNode(value,key,comparator) ;
             }
             else if(comp>0){
-                //si key>this.key
                 if(this.right==null) this.right = new Node<>(value,key) ;
                 else this.right.addNode(value,key,comparator) ;
             }
@@ -100,12 +100,12 @@ public class BinarySearchTree<K,V>{
             }
         }
 
-        public void dump(K key,List<Node<K,V>> list){
-            if(this.left!=null) this.left.dump(key,list);
+        public void dump(K key, BinarySearchTree<K,V> otherTree){
+            if(this.left!=null) this.left.dump(key,otherTree);
             if(this.key!=null){
-                if(!this.key.equals(key)) list.add(new Node(this.value,this.key)) ;
+                if(!this.key.equals(key)) otherTree.add(this.value,this.key) ;
             }
-            if(this.right!=null) this.right.dump(key,list) ;
+            if(this.right!=null) this.right.dump(key,otherTree) ;
         }
 
         public void visit(){
@@ -123,19 +123,15 @@ public class BinarySearchTree<K,V>{
         tree.add("jose",0) ;
         tree.add("franz",1) ;
         tree.add("master",3) ;
-        tree.add("fanny",7);
+        tree.add("leonardo",7);
         tree.add("fabri",4) ;
         tree.add("ferron",6) ;
         tree.add("agus",8) ;
         tree.add("toto",9);
-        tree.add("donati",-1);
+        tree.add("victor hugo",-1);
         tree.printInOrder() ;
-        tree.delete(7) ;
-        System.out.println("--------------------");
-        tree.printInOrder() ;
-        System.out.println("--------------------");
         tree.remove(6) ;
-        tree.printInOrder();
+        tree.printInOrder() ;
 
     }
 

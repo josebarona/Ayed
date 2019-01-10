@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5d4c265b-f758-4b7d-81d7-36e4250decb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ayed/LinkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ayed/LinkedList.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Alicia/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alicia/BinarySearchTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Alicia/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
+            <state relative-caret-position="581">
+              <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="131" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,7 +96,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547065970994" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547088876223" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -153,7 +151,7 @@
       <updated>1546985112773</updated>
       <workItem from="1546985115008" duration="6163000" />
       <workItem from="1547006751475" duration="6708000" />
-      <workItem from="1547044678376" duration="3425000" />
+      <workItem from="1547044678376" duration="8342000" />
     </task>
     <task id="LOCAL-00001" summary="comence linked list, delete y add funcionales, deberia mejorarlos igual">
       <created>1546987874218</created>
@@ -204,17 +202,31 @@
       <option name="project" value="LOCAL" />
       <updated>1547044746636</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="metodo delete funciona, pero no creo que deba ser asi">
+      <created>1547066038966</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1547066038966</updated>
+    </task>
+    <task id="LOCAL-00009" summary="agrege un remove, que es como delete, pero saca el nodo de mi arbol y lo re ordena (en realidad lo vuelve a insertar)">
+      <created>1547070019023</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1547070019023</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16296000" />
+    <option name="totallyTimeSpent" value="21213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13630952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -223,7 +235,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3287234" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3287234" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -256,7 +268,9 @@
     <MESSAGE value="empeze el bst" />
     <MESSAGE value="add() de bst ready" />
     <MESSAGE value="//" />
-    <option name="LAST_COMMIT_MESSAGE" value="//" />
+    <MESSAGE value="metodo delete funciona, pero no creo que deba ser asi" />
+    <MESSAGE value="agrege un remove, que es como delete, pero saca el nodo de mi arbol y lo re ordena (en realidad lo vuelve a insertar)" />
+    <option name="LAST_COMMIT_MESSAGE" value="agrege un remove, que es como delete, pero saca el nodo de mi arbol y lo re ordena (en realidad lo vuelve a insertar)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Marcelo/Selection.java">
@@ -282,8 +296,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Alicia/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
+        <state relative-caret-position="581">
+          <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="131" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
