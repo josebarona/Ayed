@@ -108,6 +108,16 @@ public class LinkedList<T>{
         }
     }
 
+    public LinkedList<T> subList(int a, int b){
+        if(a<size &&  b<size){
+            LinkedList trimedList = new LinkedList() ;
+            for(int i=a ; i<b ; i++){
+                trimedList.add( this.get(i) );
+            }
+            return trimedList ;
+        }else throw new NoSuchElementException("error") ;
+    }
+
     public List<T> toArrayList(){
         List<T> list = new ArrayList<>(size) ;
         for(int i=0 ; i<size ; i++) list.add(this.get(i)) ;

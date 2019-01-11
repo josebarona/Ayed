@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d4c265b-f758-4b7d-81d7-36e4250decb9" name="Default Changelist" comment="">
+    <list default="true" id="5d4c265b-f758-4b7d-81d7-36e4250decb9" name="Default Changelist" comment="ahora hay un remove ligeramnete menos feo.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Alicia/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alicia/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Marcelo/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Marcelo/LinkedList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,12 +16,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Alicia/BinarySearchTree.java">
+        <entry file="file://$PROJECT_DIR$/src/Marcelo/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="130" column="29" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="29" />
+            <state relative-caret-position="154">
+              <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3838#3839#0" expanded="true" />
+                <element signature="e#3874#3875#0" expanded="true" />
+                <element signature="e#3882#3883#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,14 +46,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/Selection.java" />
         <option value="$PROJECT_DIR$/src/LinkedList.java" />
-        <option value="$PROJECT_DIR$/src/Marcelo/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/Alicia/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/src/Marcelo/LinkedList.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="840" />
     <option name="y" value="23" />
-    <option name="width" value="1680" />
+    <option name="width" value="840" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -60,6 +65,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -89,13 +95,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547089561692" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547090009105" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -150,7 +156,8 @@
       <updated>1546985112773</updated>
       <workItem from="1546985115008" duration="6163000" />
       <workItem from="1547006751475" duration="6708000" />
-      <workItem from="1547044678376" duration="9122000" />
+      <workItem from="1547044678376" duration="9143000" />
+      <workItem from="1547218604476" duration="876000" />
     </task>
     <task id="LOCAL-00001" summary="comence linked list, delete y add funcionales, deberia mejorarlos igual">
       <created>1546987874218</created>
@@ -222,17 +229,24 @@
       <option name="project" value="LOCAL" />
       <updated>1547089002825</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ahora hay un remove ligeramnete menos feo.">
+      <created>1547089994927</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1547089994927</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21993000" />
+    <option name="totallyTimeSpent" value="22890000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13630952" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13630952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -290,23 +304,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Marcelo/LinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/Alicia/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-820">
-          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
+        <state relative-caret-position="557">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
-            <element signature="e#3519#3520#0" expanded="true" />
-            <element signature="e#3546#3547#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Alicia/BinarySearchTree.java">
+    <entry file="file://$PROJECT_DIR$/src/Marcelo/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="130" column="29" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="29" />
+        <state relative-caret-position="154">
+          <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3838#3839#0" expanded="true" />
+            <element signature="e#3874#3875#0" expanded="true" />
+            <element signature="e#3882#3883#0" expanded="true" />
           </folding>
         </state>
       </provider>
