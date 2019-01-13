@@ -187,6 +187,9 @@ public class LinkedList<T>{
         friends.add("toto") ;
         friends.add("ferron") ;
         friends.add("agus") ;
+        friends.add("leonardo") ;
+        friends.add("victor hugo") ;
+        friends.add("sol") ;
         friends.print();
         friends.sort();
         friends.print();
@@ -203,6 +206,9 @@ public class LinkedList<T>{
         primes.print();
         primes.sort() ;
         primes.print();
+
+        LinkedList<String> friendsTrimmed = friends.subList(2,5) ;
+        friendsTrimmed.print();
 
 
 
