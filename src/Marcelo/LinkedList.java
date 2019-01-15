@@ -48,6 +48,28 @@ public class LinkedList<T>{
         current.elem = elem ;
     }
 
+    public void insertAfter(int index, T elem){
+        if(index<size){
+            Node<T> current = this.first ;
+            for(int i=0 ; i<index ; i++) current = current.next ;
+            Node<T> temp = current.next ;
+            current.next = new Node<>(elem) ;
+            current.next.next = temp ;
+            this.size++ ;
+        }else throw new NoSuchElementException("error gg") ;
+    }
+
+    public void insertBefore(int index, T elem){
+        if(index<size){
+            Node<T> current = this.first ;
+            for(int i=0 ; i<index-1 ; i++) current = current.next ;
+            Node<T> temp = current.next ;
+            current.next = new Node<>(elem) ;
+            current.next.next = temp ;
+            this.size++ ;
+        }else throw new NoSuchElementException("error gg") ;
+    }
+
     public void delete(T elem){
         if(!isEmpty()){
             if(this.first.elem.equals(elem)) this.first = this.first.next ;
@@ -183,7 +205,7 @@ public class LinkedList<T>{
         }
 
         public void show(){
-            if(this.elem!=null) System.out.print(this.elem + " , ") ;
+            if(this.elem!=null) System.out.print(" , " + this.elem) ;
             if(this.next!=null) this.next.show() ;
         }
 
@@ -201,24 +223,10 @@ public class LinkedList<T>{
         friends.add("victor hugo") ;
         friends.add("sol") ;
         friends.print();
-        friends.sort();
+        friends.insertAfter(2,"arianna") ;
         friends.print();
-        System.out.println();
-
-        Comparator<Integer> comp2 = Comparator.comparing(Integer::intValue) ;
-        LinkedList<Integer> primes = new LinkedList<>(comp2) ;
-        primes.add(11) ;
-        primes.add(2) ;
-        primes.add(5) ;
-        primes.add(13) ;
-        primes.add(7) ;
-        primes.add(3) ;
-        primes.print();
-        primes.sort() ;
-        primes.print();
-
-        LinkedList<String> friendsTrimmed = friends.subList(2,5) ;
-        friendsTrimmed.print();
+        friends.insertBefore(1,"kiper") ;
+        friends.print() ;
 
 
 
