@@ -15,8 +15,9 @@ public class LinkedList<T>{
         this.comp = comp;
     }
 
-    public LinkedList(int size){
+    public LinkedList(int size,Comparator<T> comp ){
         for(int i=0 ; i<size ; i++) this.add(null);
+        this.comp = comp ;
     }
 
     public void add(T elem){
@@ -39,6 +40,12 @@ public class LinkedList<T>{
                 current.next.next = temp.next ;
             }
         }else throw new NoSuchElementException("error, no hay tal indice en la lista") ;
+    }
+
+    public void set(int index, T elem){
+        Node<T> current = this.first ;
+        for(int i=0 ; i<index ; i++) current = current.next ;
+        current.elem = elem ;
     }
 
     public void delete(T elem){
@@ -93,9 +100,8 @@ public class LinkedList<T>{
         // la ordeno con selectionSort()
         if(this.comp!=null){
             List<T> temp = this.toArrayList() ;
-            Selection<T> selection =  new Selection<>() ;
-            selection.sort(temp,comp) ;
-            this.copyAll(temp) ;
+            BubbleSort<T> bable =  new BubbleSort<>(this) ;
+            bable.sort() ;
         }else throw new NoSuchElementException("error, no hay comparator") ;
     }
 
@@ -135,6 +141,10 @@ public class LinkedList<T>{
 
     public int getSize() {
         return size;
+    }
+
+    public Comparator<T> getComp() {
+        return comp;
     }
 
     private class Node<T>{

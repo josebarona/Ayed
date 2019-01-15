@@ -95,6 +95,7 @@ public class Stack<T>{
         steak.print() ;
         System.out.println( steak.peek() );
         System.out.println( steak.pop() ) ;
+        System.out.println("size: " + steak.size ) ;
         steak.print() ;
         System.out.println("is empty? " + steak.isEmpty() );
         //posii

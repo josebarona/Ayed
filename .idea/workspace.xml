@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d4c265b-f758-4b7d-81d7-36e4250decb9" name="Default Changelist" comment="">
+    <list default="true" id="5d4c265b-f758-4b7d-81d7-36e4250decb9" name="Default Changelist" comment="termine stack, faltaria agregar los casos raros y exepciones">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Marcelo/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Marcelo/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Marcelo/Selection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Marcelo/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Marcelo/Stack.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,15 +17,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Marcelo/Stack.java">
+        <entry file="file://$PROJECT_DIR$/src/Marcelo/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+            <state relative-caret-position="-1914">
+              <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
               <folding>
-                <element signature="e#151#152#0" expanded="true" />
-                <element signature="e#181#182#0" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#3956#3957#0" expanded="true" />
+                <element signature="e#3992#3993#0" expanded="true" />
+                <element signature="e#4057#4058#0" expanded="true" />
+                <element signature="e#4122#4123#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,15 +49,18 @@
         <option value="$PROJECT_DIR$/src/Selection.java" />
         <option value="$PROJECT_DIR$/src/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/Alicia/BinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/src/Marcelo/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/Marcelo/Stack.java" />
+        <option value="$PROJECT_DIR$/src/Marcelo/Barcelona.java" />
+        <option value="$PROJECT_DIR$/src/Marcelo/SelectionLL.java" />
+        <option value="$PROJECT_DIR$/src/Marcelo/BubbleSort.java" />
+        <option value="$PROJECT_DIR$/src/Marcelo/LinkedList.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="840" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="99" />
     <option name="y" value="23" />
-    <option name="width" value="840" />
+    <option name="width" value="1581" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -66,6 +71,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,14 +101,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547403200123" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547566102781" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
@@ -117,13 +122,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Stack">
-    <configuration name="BinarySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Alicia.BinarySearchTree" />
+  <component name="RunManager" selected="Application.LinkedList">
+    <configuration name="Barcelona" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Marcelo.Barcelona" />
       <module name="Ayed" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Alicia.*" />
+          <option name="PATTERN" value="Marcelo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Marcelo.BubbleSort" />
+      <module name="Ayed" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Marcelo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,6 +152,19 @@
     <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Marcelo.LinkedList" />
       <module name="Ayed" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectionLL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Marcelo.SelectionLL" />
+      <module name="Ayed" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Marcelo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,9 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Stack" />
         <item itemvalue="Application.LinkedList" />
-        <item itemvalue="Application.BinarySearchTree" />
+        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.SelectionLL" />
+        <item itemvalue="Application.Barcelona" />
+        <item itemvalue="Application.Stack" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +206,8 @@
       <workItem from="1547006751475" duration="6708000" />
       <workItem from="1547044678376" duration="9143000" />
       <workItem from="1547218604476" duration="1351000" />
-      <workItem from="1547400416235" duration="2043000" />
+      <workItem from="1547400416235" duration="5162000" />
+      <workItem from="1547565360829" duration="693000" />
     </task>
     <task id="LOCAL-00001" summary="comence linked list, delete y add funcionales, deberia mejorarlos igual">
       <created>1546987874218</created>
@@ -259,17 +293,31 @@
       <option name="project" value="LOCAL" />
       <updated>1547219538062</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="termine stack, faltaria agregar los casos raros y exepciones">
+      <created>1547403244824</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1547403244824</updated>
+    </task>
+    <task id="LOCAL-00014" summary="termine stack, faltaria agregar los casos raros y exepciones">
+      <created>1547403325926</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1547403325926</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25408000" />
+    <option name="totallyTimeSpent" value="29220000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="23" width="840" height="1027" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27261904" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13809524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -278,7 +326,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3287234" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3287234" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -299,6 +347,37 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25238097" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3287234" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32978722" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -315,7 +394,20 @@
     <MESSAGE value="agrege un remove, que es como delete, pero saca el nodo de mi arbol y lo re ordena (en realidad lo vuelve a insertar)" />
     <MESSAGE value="ahora hay un remove ligeramnete menos feo." />
     <MESSAGE value="sigo agregando metodos, algun dia tendra todos los metodos de la lista de java" />
-    <option name="LAST_COMMIT_MESSAGE" value="sigo agregando metodos, algun dia tendra todos los metodos de la lista de java" />
+    <MESSAGE value="termine stack, faltaria agregar los casos raros y exepciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="termine stack, faltaria agregar los casos raros y exepciones" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Marcelo/Stack.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Marcelo/Selection.java">
@@ -338,26 +430,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Marcelo/LinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/Marcelo/Barcelona.java" />
+    <entry file="file://$PROJECT_DIR$/src/Marcelo/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="210" column="31" selection-start-line="210" selection-start-column="31" selection-end-line="210" selection-end-column="31" />
+        <state relative-caret-position="581">
+          <caret line="97" column="52" selection-start-line="97" selection-start-column="52" selection-end-line="97" selection-end-column="52" />
           <folding>
-            <element signature="e#3849#3850#0" expanded="true" />
-            <element signature="e#3876#3877#0" expanded="true" />
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Marcelo/Stack.java">
+    <entry file="file://$PROJECT_DIR$/src/Marcelo/SelectionLL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        <state relative-caret-position="493">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
           <folding>
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#48#72#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Marcelo/BubbleSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-395">
+          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Marcelo/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1914">
+          <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
+          <folding>
+            <element signature="e#3956#3957#0" expanded="true" />
+            <element signature="e#3992#3993#0" expanded="true" />
+            <element signature="e#4057#4058#0" expanded="true" />
+            <element signature="e#4122#4123#0" expanded="true" />
           </folding>
         </state>
       </provider>
