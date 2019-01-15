@@ -228,8 +228,6 @@ public class LinkedList<T>{
         friends.insertBefore(1,"kiper") ;
         friends.print() ;
 
-
-
     }
 
 }
