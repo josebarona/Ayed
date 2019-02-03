@@ -1,5 +1,7 @@
 package Marcelo;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.NoSuchElementException;
 
 @SuppressWarnings("all")
@@ -7,9 +9,14 @@ import java.util.NoSuchElementException;
 public class LL<T>{
     private Node<T> first ;
     private int size ;
+    private Comparator<T> comp ;
 
     public LL(){
         this.size = 0 ;
+    }
+
+    public LL(Comparator<T> comp){
+        this.comp = comp ;
     }
 
     public void add(T elem){
@@ -45,9 +52,11 @@ public class LL<T>{
     }
 
     public T get(int index){
-        Node<T> current = this.first ;
-        for(int i=0 ; i<index ; i++) current = current.next ;
-        return current.elem ;
+        if(index>=0 && index<size){
+            Node<T> current = this.first ;
+            for(int i=0 ; i<index ; i++) current = current.next ;
+            return current.elem ;
+        }else throw new IndexOutOfBoundsException("error") ;
     }
 
     public LL subList(int a, int b){
@@ -97,6 +106,31 @@ public class LL<T>{
         }else throw new NoSuchElementException("error") ;
     }
 
+    private void swap(LL<T> list, int a, int b){
+        T elemA = list.get(a) ;
+        T elemB = list.get(b) ;
+        list.set(a,elemB) ;
+        list.set(b,elemA) ;
+    }
+
+    public void sort(){
+        if(this.comp!=null){
+            for(int i=0 ; i<size ; i++){
+                int minIndex = i ;
+                T minElem = this.get(i) ;
+                for(int j=i+1 ; j<size-1 ; j++){
+                    if(comp.compare(this.get(j),minElem)<0){
+                        minIndex = j ;
+                        minElem = this.get(j) ;
+                    }
+                }
+                swap(this,i,minIndex);
+            }
+
+        }else throw new NoSuchElementException("metele un comp lok") ;
+    }
+
+
     public void delete(int index){
         if(index<=size){
             Node<T> current = this.first ;
@@ -143,7 +177,7 @@ public class LL<T>{
     }
 
     public static void main(String[] args) {
-        LL<String> list = new LL<>() ;
+        LL<String> list = new LL<>(String::compareTo) ;
 //        list.add("jose") ;
 //        list.add("master") ;
 //        list.add("fabri") ;
@@ -172,8 +206,9 @@ public class LL<T>{
 //        list2.printWithIndex();
 //        LL<String> list3 = list.clone() ;
 //        list3.printWithIndex();
-        list.reverse() ;
-        list.printWithIndex();
+//        list.reverse() ;
+//        list.printWithIndex();
+        list.sort() ;
 
     }
 
