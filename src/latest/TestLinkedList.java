@@ -12,15 +12,15 @@ public class TestLinkedList{
         friends.unshift("rodri") ;
         friends.unshift("fabri") ;
 
-        System.out.println( friends.stringify()) ;
+        //System.out.println( friends.stringify()) ;
 
-        System.out.println( friends.pop() );
+        //System.out.println( friends.pop() );
 
-        System.out.println( friends.stringify() );
+        //System.out.println( friends.stringify() );
 
-        System.out.println( friends.shift() );
+        //System.out.println( friends.shift() );
 
-        System.out.println( friends.stringify() );
+        //System.out.println( friends.stringify() );
 
         friends.push("euge") ;
         friends.push("pepo") ;
@@ -29,13 +29,21 @@ public class TestLinkedList{
         System.out.println( friends.stringify() );
 
 
-        LinkedList<String> someFriends = friends.slice(1,4) ;
+        //LinkedList<String> someFriends = friends.slice(1,4) ;
 
-        System.out.println( someFriends.stringify() );
+        //System.out.println( someFriends.stringify() );
 
-        LinkedList<String> friendsInvertidos = friends.reverse() ;
+        //LinkedList<String> friendsInvertidos = friends.reverse() ;
 
-        System.out.println( friendsInvertidos.stringify() );
+        //System.out.println( friendsInvertidos.stringify() );
+
+        //friends.swap(1,3) ;
+
+        //System.out.println( friends.stringify() );
+
+        friends.sort(String::compareTo) ;
+
+        System.out.println( friends.stringify() );
 
 
     }

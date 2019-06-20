@@ -1,5 +1,7 @@
 package latest;
 
+import java.util.Comparator;
+
 public class LinkedList<T> {
 
     private Node<T> head ;
@@ -83,7 +85,6 @@ public class LinkedList<T> {
         return  current ;
     }
 
-
     /*
      *El método slice() devuelve una copia de una parte del array dentro de un nuevo array empezando por inicio hasta fin (fin no incluido).
      * El array original no se modificará.
@@ -125,6 +126,32 @@ public class LinkedList<T> {
 
     }
 
+    public void set(int a, T value){
+        Node<T> temp = getNodeAtIndex(a) ;
+        temp.value = value ;
+    }
+
+    public void swap(int a, int b){
+
+        T elemA = getNodeAtIndex(a).value ;
+        T elemB = getNodeAtIndex(b).value ;
+        set(a, elemB) ;
+        set(b, elemA) ;
+
+    }
+
+    //bubble sorter
+    public void sort(Comparator<T> comp){
+
+        for(int i=0 ; i<this.size ; i++){
+            for(int j=i+1 ; j<this.size ; j++){
+                int comparison = comp.compare(get(j), get(i)) ;
+                if(comparison<0) swap(j,i) ;
+            }
+        }
+
+    }
+
 
     private class Node<T>{
 
@@ -145,21 +172,6 @@ public class LinkedList<T> {
             return this.next != null ;
         }
 
-        public T getValue() {
-            return value;
-        }
-
-        public Node<T> getNext() {
-            return next;
-        }
-
-        public void setValue(T value) {
-            this.value = value;
-        }
-
-        public void setNext(Node<T> next) {
-            this.next = next;
-        }
     }
 
 }
